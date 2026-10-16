@@ -1,98 +1,321 @@
-<!DOCTYPE html><html lang="ar" dir="rtl">
-<head>
+<!DOCTYPE html><html lang="ar" dir="rtl"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>صهيب محمد أحمد محمد | JAA</title>
-    <link rel="stylesheet" href="style.css">
-</head><body><header>
-    <div class="logo">JAA</div>
+    <meta name="theme-color" content="#101114"><title>OBI | الملف الفني - JAA</title>
+
+<meta name="description" content="الملف الفني للفنان صهيب محمد أحمد محمد، من أرشيف تجمع رسامين الجزيرة.">
+
+<link rel="stylesheet" href="style.css">
+
+</head><body class="artist-page"><header class="site-header">
+    <a href="index.html" class="logo">JAA</a>
+
     <nav>
         <a href="index.html">الرئيسية</a>
-        <a href="index.html">الأرشيف</a>
+        <a href="index.html#artists">الأرشيف</a>
+        <a href="#profile">الملف الفني</a>
     </nav>
 </header>
 
 <main>
-    <section class="section">
-        <h1>الملف <span>الفني</span></h1>
-        <p class="description">
-            أرشيف الفنانين | تجمع رسامين الجزيرة
-        </p>
-    </section>
 
-    <section class="section">
-        <div class="card" style="display:flex; align-items:center; gap:20px; flex-wrap:wrap; text-align:right;">
+    <!-- واجهة الفنان -->
+    <section class="artist-hero" id="profile">
 
-            <img
-                src="sohaib-profile.png"
-                alt="صورة الفنان صهيب"
-                style="width:130px; height:130px; object-fit:cover; border-radius:50%; border:2px solid #e6b85c;"
-            >
+        <div class="profile-topline">
+            <span class="status-dot"></span>
+            ARTIST PROFILE
+            <span class="profile-code">JAA / ARTIST-001</span>
+        </div>
 
-            <div style="flex:1; min-width:180px;">
-                <h2 style="margin:0 0 8px;">صهيب محمد أحمد محمد</h2>
-                <p style="margin:0 0 8px; color:#bbb; direction:ltr; text-align:right;">
-                    SOHAIB MOHAMMED AHMED MOHAMMED
-                </p>
-                <p style="color:#e6b85c; margin:0;">Obi | أوبي</p>
+        <div class="profile-panel">
+
+            <div class="artist-identity">
+
+                <div class="artist-avatar">
+                    <img
+                        src="sohaib-profile.png"
+                        alt="صورة الفنان صهيب محمد أحمد محمد"
+                    >
+                </div>
+
+                <div class="artist-names">
+                    <span class="eyebrow">THE ARTIST BEHIND THE ART</span>
+
+                    <h1>صهيب محمد أحمد محمد</h1>
+
+                    <p class="english-name">
+                        SOHAIB MOHAMMED AHMED MOHAMMED
+                    </p>
+
+                    <p class="artist-nickname">
+                        <span class="nickname-label">NICKNAME</span>
+                        Obi | أوبي
+                    </p>
+                </div>
+
+                <div class="artist-rank" aria-label="التصنيف العام A">
+                    <span class="rank-label">RANK</span>
+                    <span class="rank-letter">A</span>
+                    <span class="rank-caption">ARTIST</span>
+                </div>
+
             </div>
 
-            <div style="font-size:100px; font-weight:bold; color:white; text-shadow:0 0 12px #a855f7, 0 0 30px #7e22ce; line-height:1;">
-                A
+            <div class="profile-divider"></div>
+
+            <div class="artist-stats">
+
+                <div class="stat-item">
+                    <span class="stat-label">التخصص الرئيسي</span>
+                    <strong>Anime & Manga</strong>
+                </div>
+
+                <div class="stat-item">
+                    <span class="stat-label">الانتماء</span>
+                    <strong>Jazira Artists Archive</strong>
+                </div>
+
+                <div class="stat-item">
+                    <span class="stat-label">الحالة</span>
+                    <strong class="active-status">فنان مسجّل</strong>
+                </div>
+
             </div>
 
         </div>
+
     </section>
 
-    <section class="section">
-        <h2>نبذة عن الفنان</h2>
-        <p class="description">
-            فنان مهتم بعالم الأنمي والمانجا، وأسعى إلى تطوير مهاراتي الفنية واستكشاف أساليب متنوعة في الرسم والتلوين.
-        </p>
+
+    <!-- نبذة الفنان -->
+    <section class="content-section">
+
+        <div class="section-heading">
+            <span class="section-index">01</span>
+            <div>
+                <span class="eyebrow">ARTIST BIO</span>
+                <h2>نبذة عن الفنان</h2>
+            </div>
+        </div>
+
+        <div class="bio-panel">
+            <span class="quote-mark">“</span>
+
+            <p>
+                فنان مهتم بعالم الأنمي والمانجا، وأسعى إلى تطوير
+                مهاراتي الفنية واستكشاف أساليب متنوعة في الرسم والتلوين.
+            </p>
+        </div>
+
     </section>
 
-    <section class="section">
-        <h2>التصنيفات الفنية</h2>
 
-        <div class="cards">
-            <div class="card">
+    <!-- التصنيفات الفنية -->
+    <section class="content-section">
+
+        <div class="section-heading">
+            <span class="section-index">02</span>
+            <div>
+                <span class="eyebrow">ART CLASSIFICATION</span>
+                <h2>التصنيفات الفنية</h2>
+            </div>
+        </div>
+
+        <div class="cards art-categories">
+
+            <article class="card category-card category-primary">
+                <div class="category-top">
+                    <span class="category-code">CAT-01</span>
+                    <span class="category-grade">A</span>
+                </div>
+
                 <h3>Anime & Manga</h3>
-                <p>المستوى: A</p>
-            </div>
+                <p>أنمي ومانجا</p>
 
-            <div class="card">
+                <div class="grade-track">
+                    <span style="width:100%"></span>
+                </div>
+
+                <span class="category-level">المستوى الفني A</span>
+            </article>
+
+
+            <article class="card category-card">
+                <div class="category-top">
+                    <span class="category-code">CAT-02</span>
+                    <span class="category-grade">B</span>
+                </div>
+
                 <h3>Portrait</h3>
-                <p>المستوى: B</p>
-            </div>
+                <p>البورتريه وتصوير الأشخاص والحيوانات</p>
 
-            <div class="card">
+                <div class="grade-track">
+                    <span style="width:75%"></span>
+                </div>
+
+                <span class="category-level">المستوى الفني B</span>
+            </article>
+
+
+            <article class="card category-card">
+                <div class="category-top">
+                    <span class="category-code">CAT-03</span>
+                    <span class="category-grade">B</span>
+                </div>
+
                 <h3>Nature & Still Life</h3>
-                <p>المستوى: B</p>
-            </div>
+                <p>الطبيعة والطبيعة الصامتة</p>
 
-            <div class="card">
+                <div class="grade-track">
+                    <span style="width:75%"></span>
+                </div>
+
+                <span class="category-level">المستوى الفني B</span>
+            </article>
+
+
+            <article class="card category-card">
+                <div class="category-top">
+                    <span class="category-code">CAT-04</span>
+                    <span class="category-grade">E</span>
+                </div>
+
                 <h3>Fine & Abstract Art</h3>
-                <p>المستوى: E</p>
+                <p>الفن التشكيلي والتجريدي</p>
+
+                <div class="grade-track">
+                    <span style="width:20%"></span>
+                </div>
+
+                <span class="category-level">المستوى الفني E</span>
+            </article>
+
+
+            <article class="card category-card other-category">
+                <div class="category-top">
+                    <span class="category-code">CAT-05</span>
+                    <span class="category-grade">—</span>
+                </div>
+
+                <h3>Other</h3>
+                <p>تصنيفات فنية أخرى</p>
+
+                <span class="category-level">
+                    قسم مفتوح للتصنيفات الإضافية
+                </span>
+            </article>
+
+        </div>
+
+        <p class="classification-note">
+            تعكس المستويات التصنيفية المسجلة للفنان في الأرشيف.
+        </p>
+
+    </section>
+
+
+    <!-- التفضيلات الفنية -->
+    <section class="content-section">
+
+        <div class="section-heading">
+            <span class="section-index">03</span>
+            <div>
+                <span class="eyebrow">ARTIST PREFERENCES</span>
+                <h2>التفضيلات الفنية</h2>
             </div>
         </div>
+
+        <div class="preferences-grid">
+
+            <article class="preference-panel drawing-preference">
+
+                <span class="preference-number">01 / STYLE</span>
+
+                <div class="preference-icon">✦</div>
+
+                <h3>نوع الرسم المفضل</h3>
+
+                <div class="preference-value">
+                    Anime & Manga
+                </div>
+
+                <p>أنمي ومانجا</p>
+
+            </article>
+
+
+            <article class="preference-panel medium-preference">
+
+                <span class="preference-number">02 / MEDIUM</span>
+
+                <div class="preference-icon">✎</div>
+
+                <h3>خامة الرسم المفضلة</h3>
+
+                <div class="preference-value">
+                    <span>أقلام تلوين خشبية</span>
+                    <span>أقلام تحبير</span>
+                </div>
+
+                <p>COLORED PENCILS · INKING PENS</p>
+
+            </article>
+
+        </div>
+
     </section>
 
-    <section class="section">
-        <h2>أساليب الرسم المفضلة</h2>
-        <p>الأقلام الملونة وأقلام الحبر</p>
+
+    <!-- الأعمال الفنية -->
+    <section class="content-section" id="artworks">
+
+        <div class="section-heading">
+            <span class="section-index">04</span>
+            <div>
+                <span class="eyebrow">ARTWORK ARCHIVE</span>
+                <h2>الأعمال الفنية</h2>
+            </div>
+        </div>
+
+        <div class="empty-gallery">
+
+            <div class="gallery-symbol">✧</div>
+
+            <h3>معرض أعمال الفنان</h3>
+
+            <p>
+                ستُعرض هنا لوحات الفنان وأعماله الفنية
+                مع إمكانية توثيق تفاصيل كل عمل.
+            </p>
+
+            <span class="gallery-status">
+                GALLERY INITIALIZING
+            </span>
+
+        </div>
+
     </section>
 
-    <section class="section">
-        <h2>الأعمال الفنية</h2>
-        <p class="description">
-            سيتم عرض لوحات الفنان وإحصائيات أعماله هنا.
-        </p>
-    </section>
+
+    <!-- تذييل الصفحة -->
+    <footer class="artist-footer">
+
+        <div class="footer-logo">JAA</div>
+
+        <p>أرشيف تجمع رسامين الجزيرة</p>
+
+        <span>
+            في كل لوحة أثر إنسان، وفي كل أثر حكاية وطن.
+        </span>
+
+        <a href="index.html" class="back-home">
+            العودة إلى الأرشيف ↑
+        </a>
+
+    </footer>
+
 </main>
 
-<footer>
-    <p>JAA | أرشيف تجمع رسامين الجزيرة</p>
-</footer>
-
 </body>
-</html>
+            </html>
