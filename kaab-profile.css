@@ -1,0 +1,9 @@
+@import url("profile-mobile.css");
+.portrait-placeholder { width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5px; border: 2px solid var(--gold); border-radius: 50%; color: var(--gold-light); background: radial-gradient(circle at 50% 32%, rgba(84,203,136,.25), transparent 38%), linear-gradient(145deg, #203727, #0b130e 72%); box-shadow: 0 0 0 7px rgba(210,173,102,.08), 0 20px 55px #0008; }
+.portrait-placeholder > span { font-size: 6rem; line-height: 1; font-weight: 800; }
+.portrait-placeholder small { color: var(--muted); font-size: .72rem; }
+.overall-rank { display: inline-grid; place-items: center; min-width: 32px; height: 32px; border: 1px solid rgba(210,173,102,.45); border-radius: 8px; color: var(--gold-light) !important; font: 900 1.2rem Georgia, serif; }
+.grade-c .grade { color: #d5c476; }
+.grade-c .grade-track span { background: linear-gradient(90deg, #857335, #d5c476); }
+.grade-unrated .grade { color: var(--muted); }
+.grade-unrated .grade-track span { background: #48544b; }
