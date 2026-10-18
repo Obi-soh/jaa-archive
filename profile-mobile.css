@@ -192,3 +192,67 @@ a { color: inherit; text-decoration: none; }
   color: var(--gold-light);
   font-size: 0.76rem;
 }
+/* خلفية فنية ثابتة بلمسات زمردية وذهبية */
+.profile-page {
+  isolation: isolate;
+  background: #08100c;
+}
+
+.profile-page::before,
+.profile-page::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  width: 24%;
+  pointer-events: none;
+}
+
+.profile-page::before {
+  left: 0;
+  background: #176044;
+  opacity: 0.58;
+  clip-path: polygon(
+    0 0, 100% 0, 72% 5%, 96% 10%, 61% 17%,
+    88% 22%, 49% 29%, 72% 35%, 36% 42%,
+    64% 49%, 17% 57%, 44% 64%, 6% 71%,
+    38% 78%, 0 86%, 23% 93%, 0 100%
+  );
+}
+
+.profile-page::after {
+  right: 0;
+  background: #b59052;
+  opacity: 0.52;
+  clip-path: polygon(
+    58% 0, 100% 0, 100% 100%, 0 100%, 31% 92%,
+    8% 85%, 49% 78%, 19% 70%, 66% 62%,
+    35% 55%, 86% 47%, 48% 39%, 81% 31%,
+    45% 23%, 74% 15%, 40% 8%
+  );
+}
+
+/* إلغاء تدرّج الشريط العلوي والخلفية خلف صورة الفنان */
+.topbar {
+  background: transparent;
+}
+
+.hero-paint {
+  background: transparent;
+  opacity: 1;
+}
+
+.hero-paint::before,
+.hero-paint::after {
+  display: none;
+}
+
+/* إبقاء البطاقات بلون ثابت */
+.titles-strip {
+  background: #101a14;
+}
+
+.empty-gallery {
+  background: #0d1510;
+}
