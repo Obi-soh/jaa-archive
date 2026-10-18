@@ -85,6 +85,37 @@ a { color: inherit; text-decoration: none; }
 .grade-e .grade-track span { background: linear-gradient(90deg, #8f4349, #d47b79); }
 .grade-none .grade { color: var(--muted); }
 .grade-none .grade-track span { background: #48544b; }
+/* بطاقات الأعمال الفنية */
+.artwork-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 12px;
+}
+
+.artwork-item {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--panel);
+}
+
+.artwork-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 540px;
+  object-fit: contain;
+  background: #080d0a;
+}
+
+.artwork-item figcaption {
+  padding: 9px 12px;
+  color: var(--text);
+  font-size: 0.86rem;
+  text-align: right;
+}
+
 .chart-card { min-height: 205px; padding: 14px 14px 11px; }
 .chart-card h3 { min-height: 0; margin: 4px 0 0; font-size: .94rem; }
 .chart-card p { margin-top: 1px; font-size: .66rem; }
