@@ -392,6 +392,7 @@ background-repeat: repeat-y;
 .artist-dialog-row:last-child { border-bottom: 0; }
 .artist-dialog-row > span:first-child { color: var(--muted); }
 .artist-dialog-row strong { color: var(--text); font-weight: 600; }
+.artist-dialog-row a { color: var(--gold-light); font-weight: 700; text-decoration: underline; text-decoration-color: rgba(210,173,102,.55); text-underline-offset: 3px; }
 .info-pending { color: var(--muted); font-size: 0.72rem; }
 
 .artist-dialog-phone {

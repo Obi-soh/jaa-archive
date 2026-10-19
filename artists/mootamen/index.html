@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#09100c">
   <meta name="description" content="الملف الفني لمؤتمن أحمد سيد أحمد (تمن) من أرشيف رسامين الجزيرة.">
   <title>مؤتمن أحمد سيد أحمد | JAA</title>
-  <link rel="stylesheet" href="../../profile-mobile.css">
+  <link rel="stylesheet" href="../../profile-mobile.css?v=202610191007">
 </head>
 <body>
   <div class="profile-page">
@@ -40,21 +40,30 @@
       <section class="titles-strip" aria-labelledby="titles-heading">
         <h2 id="titles-heading">الألقاب</h2>
         <ul class="title-list">
-          <li>خبير فني</li>
-          <li>جوكر</li>
-          <li class="moderator-title" aria-label="لقب أدمن، مشرف">
+          <li class="moderator-title" aria-label="لقب المشرف لأدمن التجمع">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 20 5v6c0 5-3.4 9.2-8 11-4.6-1.8-8-6-8-11V5z"/><path d="m8.5 12 2.2 2.2 4.8-5"/></svg>
-            <span class="moderator-title-label"><strong>أدمن</strong><small>مشرف</small></span>
+            <span class="moderator-title-label"><strong>مشرف</strong><small>أدمن</small></span>
           </li>
-          <li>عضو مؤسس</li>
+          <li>مؤسس</li>
+          <li>فري هاند</li>
+          <li>سريع التطور</li>
+          <li>خبير</li>
+          <li>معلم</li>
+          <li>حكّاء المشهد</li>
         </ul>
       </section>
 
       <section class="more-info" aria-labelledby="more-info-heading">
-        <div class="section-heading"><span class="section-mark" aria-hidden="true"></span><h2 id="more-info-heading">المزيد من المعلومات حول الفنان</h2></div>
-        <div class="info-line"><span>تاريخ الميلاد</span><strong>مجهول</strong></div>
-        <div class="info-line"><span>فيسبوك</span><a class="profile-link" href="https://www.facebook.com/al.motman.arts" target="_blank" rel="noopener noreferrer">زيارة حساب الفنان ↗</a></div>
-        <div class="info-line"><span>التصنيف العام</span><strong class="overall-rank">B</strong></div>
+        <h2 class="info-heading">
+          <button class="info-open" id="open-artist-info" type="button" aria-haspopup="dialog" aria-controls="artist-info-dialog">
+            <span class="info-open-mark" aria-hidden="true"></span>
+            <span class="info-open-copy">
+              <span class="info-open-title" id="more-info-heading">المزيد من المعلومات حول الفنان</span>
+              <span class="info-open-subtitle">تاريخ الميلاد ووسائل التواصل وبيانات الأرشيف</span>
+            </span>
+            <span class="info-open-arrow" aria-hidden="true">↗</span>
+          </button>
+        </h2>
       </section>
 
       <section class="content-section" id="classifications" aria-labelledby="classifications-heading">
@@ -110,5 +119,42 @@
     <footer class="profile-footer"><img src="../../Sudanese-Artist.png" alt=""><p>في كل لوحة أثر إنسان، وفي كل أثر حكاية وطن.</p><a href="../../index.html">العودة إلى الأرشيف ↑</a></footer>
     <nav class="bottom-nav" aria-label="التنقل السريع"><a href="../../index.html"><span class="nav-icon" aria-hidden="true">⌂</span><span>الرئيسية</span></a><a href="#artworks"><span class="nav-icon" aria-hidden="true">▧</span><span>الأعمال</span></a><a class="is-active" href="../../index.html#artists"><span class="nav-icon" aria-hidden="true">♙</span><span>الفنانون</span></a><a href="#more-info-heading"><span class="nav-icon" aria-hidden="true">•••</span><span>المزيد</span></a></nav>
   </div>
+  <dialog class="artist-dialog" id="artist-info-dialog" aria-labelledby="artist-dialog-title">
+    <div class="artist-dialog-card" dir="rtl">
+      <div class="artist-dialog-header">
+        <div>
+          <span class="artist-dialog-kicker">JAA · ملف الفنان</span>
+          <h2 id="artist-dialog-title">معلومات الفنان مؤتمن أحمد سيد أحمد</h2>
+        </div>
+        <button class="artist-dialog-close" type="button" aria-label="إغلاق النافذة">×</button>
+      </div>
+      <p class="artist-dialog-intro">معلومات ووسيلة تواصل شاركها الفنان.</p>
+      <section class="artist-dialog-group">
+        <h3>معلومات شخصية</h3>
+        <div class="artist-dialog-row"><span>تاريخ الميلاد</span><strong>مجهول</strong></div>
+      </section>
+      <section class="artist-dialog-group">
+        <h3>الحسابات والمنصات</h3>
+        <div class="artist-dialog-row"><span>فيسبوك</span><a href="https://www.facebook.com/al.motman.arts" target="_blank" rel="noopener noreferrer">زيارة حساب الفنان ↗</a></div>
+      </section>
+      <section class="artist-dialog-group">
+        <h3>بيانات الأرشيف</h3>
+        <div class="artist-dialog-row"><span>التصنيف العام</span><strong>B</strong></div>
+        <div class="artist-dialog-row"><span>الانتماء</span><strong>أرشيف رسامين الجزيرة</strong></div>
+      </section>
+    </div>
+  </dialog>
+  <script>
+    (() => {
+      const dialog = document.getElementById("artist-info-dialog");
+      const openButton = document.getElementById("open-artist-info");
+      const closeButton = dialog.querySelector(".artist-dialog-close");
+      openButton.addEventListener("click", () => dialog.showModal());
+      closeButton.addEventListener("click", () => dialog.close());
+      dialog.addEventListener("click", (event) => {
+        if (event.target === dialog) dialog.close();
+      });
+    })();
+  </script>
 </body>
 </html>
