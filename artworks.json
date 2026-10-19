@@ -1,5 +1,25 @@
 [
   {
+    "image": "artworks/abdulqader/artworks_gido_gido-art-03.jpg",
+    "title": "أوجيرو أوبناي",
+    "artist": "عبد القادر حبيب الله عبد القادر",
+    "href": "artists/abdulqader/index.html#artworks",
+    "description": "هاشيرا الأفعى من أنمي جوجيستو كايسين",
+    "type": "أنمي",
+    "material": "حبر",
+    "size": "A4"
+  },
+  {
+    "image": "artworks/abdulqader/artworks_gido_gido-art-02.jpg",
+    "title": "كيلوا زولديك",
+    "artist": "عبد القادر حبيب الله عبد القادر",
+    "href": "artists/abdulqader/index.html#artworks",
+    "description": "blue lighting",
+    "type": "أنمي - مانجا",
+    "material": "حبر",
+    "size": "A4"
+  },
+  {
     "image": "artworks/abdulqader/artworks_gido_gido-art-01.jpg",
     "title": "فريناليزا",
     "artist": "عبد القادر حبيب الله عبد القادر",
