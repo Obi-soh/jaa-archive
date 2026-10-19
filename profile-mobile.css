@@ -199,7 +199,8 @@ a { color: inherit; text-decoration: none; }
   background-image: url("profile-background.webp");
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: 100% 100%;
+  background-size: 100% auto;
+background-repeat: repeat-y;
 }
 
 /* إزالة الأشكال الهندسية السابقة */
