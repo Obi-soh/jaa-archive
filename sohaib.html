@@ -58,14 +58,25 @@
         </ul>
       </section>
 
-      <section class="more-info" aria-labelledby="more-info-heading">
-        <div class="section-heading">
-          <span class="section-mark" aria-hidden="true"></span>
-          <h2 id="more-info-heading">المزيد من المعلومات حول الفنان</h2>
-        </div>
-        <div class="info-line"><span>الانتماء</span><strong>أرشيف رسامين الجزيرة</strong></div>
-        <div class="info-line"><span>الحالة</span><strong class="active-status">فنان مسجّل</strong></div>
-      </section>
+            <section class="more-info" aria-labelledby="more-info-heading">
+        <h2 class="info-heading">
+          <button
+            class="info-open"
+            id="open-artist-info"
+            type="button"
+            aria-haspopup="dialog"
+            aria-controls="artist-info-dialog"
+          >
+            <span class="info-open-mark" aria-hidden="true"></span>
+            <span class="info-open-copy">
+              <span class="info-open-title" id="more-info-heading">المزيد من المعلومات حول الفنان</span>
+              <span class="info-open-subtitle">تاريخ الميلاد ووسائل التواصل والمنصات</span>
+            </span>
+            <span class="info-open-arrow" aria-hidden="true">↗</span>
+          </button>
+        </h2>
+            </section>
+      
 
       <section class="content-section" id="classifications" aria-labelledby="classifications-heading">
         <div class="section-heading">
