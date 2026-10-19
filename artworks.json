@@ -1,5 +1,15 @@
 [
   {
+    "image": "artworks/abdulqader/artworks_gido_gido-art-01.jpg",
+    "title": "فريناليزا",
+    "artist": "عبد القادر حبيب الله عبد القادر",
+    "href": "artists/abdulqader/index.html#artworks",
+    "description": "دمج بين تمثال الحرية والموناليزا",
+    "type": "بورتريه",
+    "material": "حبر",
+    "size": "A4"
+  },
+  {
     "image": "artworks/tmn/artworks_tmn_tmn-art-01.jpg",
     "title": "لوحة طبيعية تعكس جمال المرأة وعفتها في الإسلام",
     "artist": "مؤتمن أحمد سيد أحمد",
