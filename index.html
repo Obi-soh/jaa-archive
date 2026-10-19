@@ -268,7 +268,7 @@
         const works = await response.json();
         if (!Array.isArray(works) || works.length === 0) return;
 
-        const cards = works.slice(0, 3).map((work) => {
+        const cards = works.slice(-3).reverse().map((work) => {
           const card = document.createElement("a");
           card.className = "artwork-card";
           card.href = work.href || "#artworks";
