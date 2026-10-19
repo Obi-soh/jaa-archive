@@ -192,48 +192,24 @@ a { color: inherit; text-decoration: none; }
   color: var(--gold-light);
   font-size: 0.76rem;
 }
-/* خلفية فنية ثابتة بلمسات زمردية وذهبية */
+/* خلفية فنية بضربات فرشاة، بلا تدرجات */
 .profile-page {
   isolation: isolate;
-  background: #08100c;
+  background-color: #08100c;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0ODAgMTYwMCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGcgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cGF0aCBkPSJNLTUwIDcwIFE1NSAxNTAgMjggMjUwIFQ3MiA0MjAiIHN0cm9rZT0iIzE3NjA0NCIgc3Ryb2tlLXdpZHRoPSI1NCIgc3Ryb2tlLWRhc2hhcnJheT0iMTggNiA0NSA3IDM4IDExIDU1IDEyIiBvcGFjaXR5PSIuNzYiLz48cGF0aCBkPSJNNTIwIDM1IFE0MzAgMTQwIDQ2MiAyNDUgVDQwMCA0MzAiIHN0cm9rZT0iI2I1OTA1MiIgc3Ryb2tlLXdpZHRoPSIzMSIgc3Ryb2tlLWRhc2hhcnJheT0iMjAgNyA2MCAxMCAzNSA4IDQ0IDE2IiBvcGFjaXR5PSIuNzUiLz48cGF0aCBkPSJNLTQyIDY1MCBRNTIgNzMwIDE4IDg0NSBUNzIgMTAxMCIgc3Ryb2tlPSIjMTc2MDQ0IiBzdHJva2Utd2lkdGg9IjQyIiBzdHJva2UtZGFzaGFycmF5PSIyOCA2IDU1IDExIDM4IDE0IiBvcGFjaXR5PSIuNjAiLz48cGF0aCBkPSJNNTIwIDEwODAgUTQyNSAxMTYwIDQ2MiAxMjgwIFQ0MDAgMTUwNSIgc3Ryb2tlPSIjYjU5MDUyIiBzdHJva2Utd2lkdGg9IjI4IiBzdHJva2UtZGFzaGFycmFheT0iMjAgNiA0OCAxMSAzOCAxNSIgb3BhY2l0eT0iLjY4Ii8+PC9nPjwvc3ZnPg==");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100% 100%;
 }
 
+/* إزالة الأشكال الهندسية السابقة */
 .profile-page::before,
 .profile-page::after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  bottom: 0;
-  width: 24%;
-  pointer-events: none;
+  content: none;
+  display: none;
 }
 
-.profile-page::before {
-  left: 0;
-  background: #176044;
-  opacity: 0.58;
-  clip-path: polygon(
-    0 0, 100% 0, 72% 5%, 96% 10%, 61% 17%,
-    88% 22%, 49% 29%, 72% 35%, 36% 42%,
-    64% 49%, 17% 57%, 44% 64%, 6% 71%,
-    38% 78%, 0 86%, 23% 93%, 0 100%
-  );
-}
-
-.profile-page::after {
-  right: 0;
-  background: #b59052;
-  opacity: 0.52;
-  clip-path: polygon(
-    58% 0, 100% 0, 100% 100%, 0 100%, 31% 92%,
-    8% 85%, 49% 78%, 19% 70%, 66% 62%,
-    35% 55%, 86% 47%, 48% 39%, 81% 31%,
-    45% 23%, 74% 15%, 40% 8%
-  );
-}
-
-/* إلغاء تدرّج الشريط العلوي والخلفية خلف صورة الفنان */
+/* إزالة التدرج من الشريط والخلفية خلف صورة الفنان */
 .topbar {
   background: transparent;
 }
@@ -248,11 +224,18 @@ a { color: inherit; text-decoration: none; }
   display: none;
 }
 
-/* إبقاء البطاقات بلون ثابت */
-.titles-strip {
+/* الحفاظ على البطاقات بلون ثابت */
+.titles-strip,
+.empty-gallery {
   background: #101a14;
 }
 
-.empty-gallery {
+/* تغيير الخلفية الفعلية خلف عنوان ووصف اللوحة */
+.artwork-item {
   background: #0d1510;
+}
+
+.artwork-item figcaption {
+  background: #0d1510;
+  border-top: 1px solid rgba(210, 173, 102, 0.3);
 }
