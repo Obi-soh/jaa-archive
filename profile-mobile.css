@@ -240,3 +240,182 @@ background-repeat: repeat-y;
   background: #0d1510;
   border-top: 1px solid rgba(210, 173, 102, 0.3);
 }
+/* بطاقة فتح معلومات الفنان */
+.info-heading { margin: 0; }
+
+.info-open {
+  width: 100%;
+  min-height: 76px;
+  padding: 12px 14px;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  border: 1px solid rgba(210, 173, 102, 0.35);
+  border-radius: 14px;
+  background: #101a14;
+  color: var(--text);
+  text-align: right;
+  font: inherit;
+  cursor: pointer;
+}
+
+.info-open:focus-visible {
+  outline: 2px solid var(--gold-light);
+  outline-offset: 3px;
+}
+
+.info-open-mark {
+  width: 25px;
+  height: 3px;
+  flex: 0 0 auto;
+  border-radius: 4px;
+  background: var(--gold);
+}
+
+.info-open-copy {
+  flex: 1;
+  display: grid;
+  gap: 3px;
+}
+
+.info-open-title {
+  color: var(--text);
+  font-size: 0.98rem;
+  font-weight: 800;
+}
+
+.info-open-subtitle {
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 400;
+}
+
+.info-open-arrow,
+.artist-dialog-close {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(210, 173, 102, 0.35);
+  border-radius: 50%;
+  background: #0d1510;
+  color: var(--gold-light);
+  font-size: 1.2rem;
+}
+
+/* نافذة معلومات الفنان */
+.artist-dialog {
+  width: min(420px, calc(100% - 28px));
+  max-height: 82vh;
+  margin: auto;
+  padding: 0;
+  overflow: auto;
+  border: 1px solid rgba(210, 173, 102, 0.42);
+  border-radius: 18px;
+  background: #0d1510;
+  color: var(--text);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.72);
+}
+
+.artist-dialog::backdrop {
+  background: rgba(1, 5, 3, 0.76);
+  backdrop-filter: blur(5px);
+}
+
+.artist-dialog-card {
+  padding: 18px;
+}
+
+.artist-dialog-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.artist-dialog-kicker {
+  color: var(--green);
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+}
+
+.artist-dialog-header h2 {
+  margin: 3px 0 0;
+  color: var(--text);
+  font-size: 1.08rem;
+}
+
+.artist-dialog-close {
+  flex: 0 0 auto;
+  padding: 0;
+  cursor: pointer;
+}
+
+.artist-dialog-intro {
+  margin: 8px 0 14px;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.artist-dialog-group {
+  margin-top: 11px;
+  padding: 11px 12px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #101a14;
+}
+
+.artist-dialog-group h3 {
+  margin: 0 0 5px;
+  color: var(--gold-light);
+  font-size: 0.82rem;
+}
+
+.artist-dialog-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.78rem;
+}
+
+.artist-dialog-row:last-child { border-bottom: 0; }
+.artist-dialog-row > span:first-child { color: var(--muted); }
+.artist-dialog-row strong { color: var(--text); font-weight: 600; }
+.info-pending { color: var(--muted); font-size: 0.72rem; }
+
+.artist-dialog-phone {
+  margin: 4px 0 0;
+  color: var(--text);
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+.artist-contact-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.artist-contact-button {
+  min-height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(210, 173, 102, 0.25);
+  border-radius: 10px;
+  background: #0c1710;
+  color: var(--gold-light);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.artist-contact-button.whatsapp {
+  border-color: rgba(84, 203, 136, 0.4);
+  background: #143523;
+  color: var(--green-light);
+  }
