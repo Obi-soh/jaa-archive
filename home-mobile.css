@@ -188,3 +188,21 @@ button, input { font: inherit; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: .01ms !important; }
 }
+/* ضبط صورة بطاقة أحدث الأعمال */
+.artwork-list > .artwork-card {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  color: inherit;
+  text-decoration: none;
+}
+
+.artwork-list > .artwork-card > .artwork-image {
+  display: block;
+  width: 100%;
+  height: 170px;
+  max-height: 170px;
+  object-fit: contain;
+  object-position: center;
+  background: #080d0a;
+}
