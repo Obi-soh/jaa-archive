@@ -6,7 +6,8 @@
   <meta name="theme-color" content="#09100c">
   <meta name="description" content="الملف الفني لمؤتمن أحمد سيد أحمد (تمن) من أرشيف رسامين الجزيرة.">
   <title>مؤتمن أحمد سيد أحمد | JAA</title>
-  <link rel="stylesheet" href="../../profile-mobile.css?v=202610191007">
+  <link rel="stylesheet" href="../../profile-mobile.css?v=202610191344">
+  <script src="../../artist-stats.js?v=202610191344" defer></script>
 </head>
 <body>
   <div class="profile-page">
@@ -88,6 +89,13 @@
         </div>
       </section>
 
+      <section class="skill-stats-access" aria-label="إحصائيات الفنان">
+        <button class="skill-stats-toggle" type="button" data-skill-stats-trigger aria-haspopup="dialog" aria-expanded="false" aria-controls="artist-skill-dialog">
+          <span class="skill-stats-copy"><span class="skill-stats-title">إحصائيات تفصيلية عن الفنان</span><span class="skill-stats-hint">تقييم مستقل لكل مهارة من 100، بلا نتيجة شاملة</span></span>
+          <span class="skill-stats-plus" aria-hidden="true">+</span>
+        </button>
+      </section>
+
       <section class="content-section artworks-section" id="artworks" aria-labelledby="artworks-heading">
         <div class="section-heading"><span class="section-mark" aria-hidden="true"></span><div><span class="section-kicker">ARTWORK ARCHIVE</span><h2 id="artworks-heading">الأعمال الفنية</h2></div></div>
         <div class="artwork-grid">
@@ -156,5 +164,13 @@
       });
     })();
   </script>
+  <dialog class="skill-stats-dialog" id="artist-skill-dialog" aria-labelledby="artist-skill-title">
+    <div class="skill-stats-panel" dir="rtl">
+      <header class="skill-stats-header"><div><span class="skill-stats-kicker">JAA · ARTIST SKILLS</span><h2 id="artist-skill-title">إحصائيات تفصيلية عن الفنان</h2><p class="skill-stats-name" id="artist-skill-name"></p></div><button class="skill-stats-close" type="button" data-skill-stats-close aria-label="إغلاق الإحصائيات">×</button></header>
+      <p class="skill-stats-meta" id="artist-skill-meta"></p>
+      <div class="skill-stats-groups" id="artist-skill-groups"></div>
+    </div>
+  </dialog>
+  <script type="application/json" id="artist-skill-ratings">{"artistName":"مؤتمن أحمد سيد أحمد","evaluatedAt":null,"notApplicable":[],"scores":{"freehand":null,"observation":null,"reference-accuracy":null,"line-control":null,"proportion-perspective":null,"light-shadow":null,"color-harmony":null,"material-control":null,"details":null,"composition":null,"creativity":null,"storytelling":null,"personal-style":null,"anatomy":null,"backgrounds":null,"texture-pores":null,"material-experimentation":null,"speed":null,"cleanliness":null}}</script>
 </body>
 </html>
