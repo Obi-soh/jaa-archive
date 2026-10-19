@@ -52,7 +52,8 @@
     const terms = query.split(/\s+/).filter(Boolean);
     const matches = (value) => terms.every((term) => normalize(value).includes(term));
     const artists = index.artists.filter((artist) => matches([
-      artist.name, artist.nickname, artist.specialty, artist.preferredMaterial, artist.rank, ...artist.titles
+      artist.name, artist.nickname, artist.specialty, artist.preferredMaterial, artist.rank,
+      ...(artist.classifications || []), ...artist.titles
     ].join(" ")));
     const artworks = index.artworks.filter((work) => matches([
       work.title, work.artist, work.type, work.material, work.size

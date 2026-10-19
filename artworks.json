@@ -45,5 +45,25 @@
     "artist": "صهيب محمد أحمد محمد",
     "year": "2026",
     "href": "artists/sohaib/index.html#artworks"
+  },
+  {
+    "image": "artworks/tmn/artworks_tmn_tmn-art-04.jpg",
+    "title": "ليلة مرصعة بالنجوم لفان جوخ - باللون الوردي",
+    "artist": "مؤتمن أحمد سيد أحمد",
+    "href": "artists/mootamen/index.html#artworks",
+    "description": "لا تعبر فقط عن تحول لوني بسيط بل قفزة في الرؤية الفنية للعالم",
+    "type": "فن تشكيلي عن الطبيعة",
+    "material": "ماركر",
+    "size": "A3"
+  },
+  {
+    "image": "artworks/abdulqader/artworks_gido_gido-art-04.jpg",
+    "title": "سأصبح إمبراطور السحر",
+    "artist": "عبد القادر حبيب الله عبد القادر",
+    "href": "artists/abdulqader/index.html#artworks",
+    "description": "صورة للبطل آستا من أنمي بلاك كلوفر",
+    "type": "مانجا",
+    "material": "حبر",
+    "size": "A4"
   }
 ]
