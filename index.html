@@ -120,5 +120,59 @@
       <a class="bottom-link" href="#about"><span class="nav-icon" aria-hidden="true">•••</span><span>المزيد</span></a>
     </nav>
   </div>
+    <script>
+    (async function loadLatestArtworks() {
+      const list = document.getElementById("latest-artworks");
+      if (!list) return;
+
+      try {
+        const response = await fetch("artworks.json", { cache: "no-store" });
+        if (!response.ok) return;
+
+        const works = await response.json();
+        if (!Array.isArray(works) || works.length === 0) return;
+
+        const cards = works.slice(0, 3).map((work) => {
+          const card = document.createElement("a");
+          card.className = "artwork-card";
+          card.href = work.href || "#artworks";
+          card.setAttribute(
+            "aria-label",
+            `لوحة ${work.title} للفنان ${work.artist}`
+          );
+
+          const image = document.createElement("img");
+          image.className = "artwork-image";
+          image.src = work.image;
+          image.alt = `لوحة ${work.title} للفنان ${work.artist}`;
+          image.loading = "lazy";
+
+          const meta = document.createElement("div");
+          meta.className = "artwork-meta";
+
+          const text = document.createElement("div");
+          const title = document.createElement("h3");
+          title.textContent = work.title;
+
+          const artist = document.createElement("p");
+          artist.textContent = work.artist;
+
+          const year = document.createElement("span");
+          year.className = "artwork-year";
+          year.textContent = work.year || "";
+
+          text.append(title, artist);
+          meta.append(text, year);
+          card.append(image, meta);
+
+          return card;
+        });
+
+        list.replaceChildren(...cards);
+      } catch (error) {
+        console.error("تعذر تحميل أحدث الأعمال:", error);
+      }
+    })();
+                                               </script>
 </body>
 </html>
