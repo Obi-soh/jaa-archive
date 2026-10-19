@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#0b100e">
   <meta name="description" content="أرشيف رسامين الجزيرة؛ توثيقًا لكل فنان وضع جزءًا من روحه في لوحته، وسكب من وقته وجهده وإحساسه في كل خطٍّ ولون...">
   <title>JAA | أرشيف رسامين الجزيرة</title>
-  <link rel="stylesheet" href="home-mobile.css?v=202610190954">
+  <link rel="stylesheet" href="home-mobile.css?v=202610191758">
 </head>
 <body>
   <div class="page-shell">
@@ -19,9 +19,9 @@
           <summary aria-label="فتح البحث">
             <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg>
           </summary>
-          <form action="#artworks" role="search">
+          <form action="#archive-search-section" role="search" data-header-search-form>
             <label class="visually-hidden" for="archive-search">ابحث في الأرشيف</label>
-            <input id="archive-search" type="search" placeholder="ابحث في الأرشيف...">
+            <input id="archive-search" type="search" placeholder="ابحث في الأرشيف..." data-header-search-input>
           </form>
         </details>
         <details class="menu-box">
@@ -65,13 +65,27 @@
           <h2 id="archive-search-title">ابحث عن فنان أو لوحة</h2>
           <p>ابحث بالاسم، أو الخامة، أو المقاس، أو النوع، أو التصنيف العام، أو اللقب.</p>
         </div>
-        <form class="archive-search-form" id="archive-search-form" role="search">
-          <label class="visually-hidden" for="archive-search-main">ابحث داخل أرشيف رسامين الجزيرة</label>
-          <span class="archive-search-icon" aria-hidden="true">⌕</span>
-          <input id="archive-search-main" type="search" autocomplete="off" placeholder="مثال: جوكر، حبر، A4، أنمي...">
-          <button type="button" id="archive-search-clear" aria-label="مسح البحث" hidden>×</button>
-        </form>
-        <p class="search-hint" id="archive-search-hint">اكتب كلمة واحدة أو أكثر، وستظهر النتائج فورًا.</p>
+        <div class="search-layout">
+          <div class="search-main-column">
+            <form class="archive-search-form" id="archive-search-form" role="search">
+              <label class="visually-hidden" for="archive-search-main">ابحث داخل أرشيف رسامين الجزيرة</label>
+              <span class="archive-search-icon" aria-hidden="true">⌕</span>
+              <input id="archive-search-main" type="search" autocomplete="off" placeholder="مثال: جوكر، حبر، A4، أنمي...">
+              <button type="button" id="archive-search-clear" aria-label="مسح البحث" hidden>×</button>
+            </form>
+            <p class="search-hint" id="archive-search-hint">اكتب كلمة واحدة أو أكثر، وستظهر النتائج فورًا.</p>
+          </div>
+          <aside class="search-key-panel" aria-label="مفاتيح بحث سريعة">
+            <strong>مفاتيح سريعة</strong>
+            <div class="search-key-list">
+              <button type="button" class="search-key" data-search-key="جوكر">جوكر</button>
+              <button type="button" class="search-key" data-search-key="حبر">حبر</button>
+              <button type="button" class="search-key" data-search-key="A4">A4</button>
+              <button type="button" class="search-key" data-search-key="أنمي">أنمي</button>
+              <button type="button" class="search-key" data-search-key="B">رتبة B</button>
+            </div>
+          </aside>
+        </div>
         <div class="search-results" id="archive-search-results" aria-live="polite" aria-atomic="true"></div>
       </section>
 
@@ -81,6 +95,14 @@
           <span class="section-kicker">كيف نقرأ الأرشيف؟</span>
           <h2 id="classification-note-title">التصنيف العام والرتب والألقاب</h2>
           <p>التصنيف العام يعبّر عن المستوى الإجمالي للفنان، أما الألقاب فتصف أدواره أو أسلوبه أو مهاراته الفنية. قد يحمل الفنان أكثر من لقب، وتُضاف البيانات تدريجيًا مع توسّع الأرشيف.</p>
+          <div class="rank-key" aria-label="مفتاح التصنيفات العامة">
+            <div><b>SSS</b><span>استثنائي</span></div>
+            <div><b>SS</b><span>متفوق جدًا</span></div>
+            <div><b>S</b><span>متقدم جدًا</span></div>
+            <div><b>A</b><span>متقدم</span></div>
+            <div><b>B</b><span>متمكن</span></div>
+            <div><b>C</b><span>نامٍ</span></div>
+          </div>
         </div>
         <a class="classification-note-link" href="#title-guide">قراءة دليل الألقاب <span aria-hidden="true">←</span></a>
       </section>

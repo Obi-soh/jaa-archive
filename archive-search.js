@@ -5,6 +5,8 @@
   const results = document.getElementById("archive-search-results");
   const hint = document.getElementById("archive-search-hint");
   if (!form || !input || !clearButton || !results || !hint) return;
+  const headerInput = document.querySelector("[data-header-search-input]");
+  const searchKeys = document.querySelectorAll("[data-search-key]");
 
   const normalize = (value = "") => String(value)
     .toLocaleLowerCase("ar")
@@ -35,8 +37,10 @@
   </a>`;
 
   let index = { artists: [], artworks: [] };
+  let currentQuery = "";
 
   const render = (rawQuery) => {
+    currentQuery = rawQuery;
     const query = normalize(rawQuery);
     clearButton.hidden = !query;
     if (!query) {
@@ -68,6 +72,23 @@
 
   input.addEventListener("input", () => render(input.value));
   form.addEventListener("submit", (event) => event.preventDefault());
+  headerInput?.addEventListener("input", () => {
+    input.value = headerInput.value;
+    render(input.value);
+  });
+  document.querySelector("[data-header-search-form]")?.addEventListener("submit", (event) => {
+    event.preventDefault();
+    input.value = headerInput?.value || "";
+    render(input.value);
+    document.getElementById("archive-search-section")?.scrollIntoView({ behavior: "smooth", block: "start" });
+    input.focus();
+  });
+  searchKeys.forEach((key) => key.addEventListener("click", () => {
+    input.value = key.dataset.searchKey || "";
+    if (headerInput) headerInput.value = input.value;
+    render(input.value);
+    input.focus();
+  }));
   clearButton.addEventListener("click", () => {
     input.value = "";
     render("");
@@ -76,6 +97,6 @@
 
   fetch("archive-search.json", { cache: "no-store" })
     .then((response) => response.ok ? response.json() : Promise.reject(new Error("تعذر تحميل فهرس البحث")))
-    .then((data) => { index = data; })
+    .then((data) => { index = data; render(currentQuery || input.value); })
     .catch((error) => console.error(error));
 })();
