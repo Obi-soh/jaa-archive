@@ -132,7 +132,7 @@ button, input { font: inherit; }
 .archive-search-section { position: relative; z-index: 1; margin: 8px 20px 0; padding: 22px 16px 18px; border: 1px solid rgba(103,197,142,.26); border-radius: 16px; background: linear-gradient(145deg, rgba(22,43,29,.96), rgba(10,18,13,.98)); box-shadow: 0 18px 45px rgba(0,0,0,.18); }
 .search-intro h2 { margin: 5px 0 3px; color: var(--text); font-size: 1.22rem; line-height: 1.4; }
 .search-intro p { margin: 0 0 13px; color: var(--muted); font-size: .76rem; line-height: 1.7; }
-.search-layout { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(112px, .65fr); gap: 10px; align-items: start; }
+.search-layout { display: block; }
 .search-main-column { min-width: 0; }
 .archive-search-form { position: relative; display: flex; align-items: center; }
 .archive-search-form input { width: 100%; min-height: 52px; padding: 11px 43px 11px 39px; color: var(--text); background: rgba(4,10,7,.78); border: 1px solid rgba(210,174,103,.5); border-radius: 11px; outline: none; direction: rtl; box-shadow: inset 0 0 0 1px rgba(255,255,255,.02); }
