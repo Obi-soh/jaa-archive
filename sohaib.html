@@ -155,5 +155,73 @@
       <a href="#more-info-heading"><span class="nav-icon" aria-hidden="true">•••</span><span>المزيد</span></a>
     </nav>
   </div>
+    <dialog class="artist-dialog" id="artist-info-dialog" aria-labelledby="artist-dialog-title">
+    <div class="artist-dialog-card" dir="rtl">
+      <div class="artist-dialog-header">
+        <div>
+          <span class="artist-dialog-kicker">JAA · ملف الفنان</span>
+          <h2 id="artist-dialog-title">معلومات الفنان صهيب</h2>
+        </div>
+        <button class="artist-dialog-close" type="button" aria-label="إغلاق النافذة">×</button>
+      </div>
+
+      <p class="artist-dialog-intro">معلومات ووسائل تواصل شاركها الفنان.</p>
+
+      <section class="artist-dialog-group">
+        <h3>معلومات شخصية</h3>
+        <div class="artist-dialog-row">
+          <span>تاريخ الميلاد</span>
+          <strong><time datetime="2002-04-22">22 أبريل 2002</time></strong>
+        </div>
+      </section>
+
+      <section class="artist-dialog-group">
+        <h3>التواصل والعمل</h3>
+        <p class="artist-dialog-phone" dir="ltr">+2490100077452</p>
+        <div class="artist-contact-actions">
+          <a class="artist-contact-button whatsapp" href="https://wa.me/2490100077452" target="_blank" rel="noopener noreferrer">واتساب</a>
+          <a class="artist-contact-button" href="tel:+2490100077452">اتصال</a>
+        </div>
+      </section>
+
+      <section class="artist-dialog-group">
+        <h3>الحسابات والمنصات</h3>
+        <div class="artist-dialog-row">
+          <span>إنستغرام</span><span class="info-pending">سيُضاف الرابط لاحقًا</span>
+        </div>
+        <div class="artist-dialog-row">
+          <span>فيسبوك</span><span class="info-pending">سيُضاف الرابط لاحقًا</span>
+        </div>
+        <div class="artist-dialog-row">
+          <span>موقع نشر الأعمال</span><span class="info-pending">سيُضاف الرابط لاحقًا</span>
+        </div>
+      </section>
+
+      <section class="artist-dialog-group">
+        <h3>بيانات الأرشيف</h3>
+        <div class="artist-dialog-row">
+          <span>الانتماء</span><strong>أرشيف رسامين الجزيرة</strong>
+        </div>
+        <div class="artist-dialog-row">
+          <span>الحالة</span><strong>فنان مسجّل</strong>
+        </div>
+      </section>
+    </div>
+  </dialog>
+
+  <script>
+    (() => {
+      const dialog = document.getElementById("artist-info-dialog");
+      const openButton = document.getElementById("open-artist-info");
+      const closeButton = dialog.querySelector(".artist-dialog-close");
+
+      openButton.addEventListener("click", () => dialog.showModal());
+      closeButton.addEventListener("click", () => dialog.close());
+
+      dialog.addEventListener("click", (event) => {
+        if (event.target === dialog) dialog.close();
+      });
+    })();
+  </script>
 </body>
 </html>
