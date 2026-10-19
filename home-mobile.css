@@ -162,6 +162,29 @@ button, input { font: inherit; }
 .about-section { margin: 24px 20px 10px; padding: 19px; border: 1px solid rgba(202,174,111,.2); border-radius: 14px; background: linear-gradient(125deg, rgba(24,49,32,.7), rgba(13,20,15,.85)); }
 .about-section h2 { margin: 7px 0; font-size: 1.08rem; }
 .about-section p { margin: 0; color: var(--muted); font-size: .82rem; line-height: 1.85; }
+.title-guide-link { display: inline-flex; align-items: center; gap: 8px; margin-top: 13px; padding: 8px 11px; border: 1px solid rgba(210,174,103,.42); border-radius: 9px; color: var(--gold-light); background: rgba(10,17,12,.45); font-size: .75rem; font-weight: 700; }
+.title-guide-link:focus-visible { outline: 2px solid var(--gold-light); outline-offset: 3px; }
+.title-guide { margin: 24px 20px 28px; padding: 18px 15px 16px; border: 1px solid rgba(202,174,111,.24); border-radius: 16px; background: linear-gradient(145deg, rgba(20,34,24,.94), rgba(10,16,12,.98)); }
+.title-guide .section-heading { align-items: center; margin-bottom: 8px; }
+.title-guide .section-heading h2 { margin: 0; font-size: 1.12rem; }
+.title-guide-mark { padding: 4px 7px; border: 1px solid rgba(210,174,103,.32); border-radius: 6px; color: var(--gold-light); font: 700 .58rem Georgia, serif; letter-spacing: .1em; }
+.title-guide-intro { margin: 0 0 13px; color: var(--muted); font-size: .75rem; line-height: 1.75; }
+.title-icon-sprite { position: absolute; width: 0; height: 0; overflow: hidden; }
+.title-category { margin-top: 9px; overflow: hidden; border: 1px solid var(--line); border-radius: 12px; background: rgba(10,17,12,.58); }
+.title-category summary { min-height: 48px; padding: 10px 12px; display: flex; align-items: center; gap: 8px; list-style: none; color: var(--text); cursor: pointer; font-size: .82rem; font-weight: 800; }
+.title-category summary::-webkit-details-marker { display: none; }
+.title-category-count { margin-inline-start: auto; color: var(--muted); font-size: .65rem; font-weight: 400; white-space: nowrap; }
+.title-category-toggle { width: 22px; height: 22px; flex: 0 0 auto; display: grid; place-items: center; border: 1px solid rgba(210,174,103,.35); border-radius: 50%; color: var(--gold-light); }
+.title-category-toggle::before { content: "+"; font-size: 1rem; line-height: 1; }
+.title-category[open] .title-category-toggle::before { content: "−"; }
+.title-grid { display: grid; gap: 7px; padding: 0 8px 9px; }
+.title-card { min-width: 0; padding: 10px; display: flex; align-items: flex-start; gap: 10px; border: 1px solid rgba(173,201,178,.1); border-radius: 10px; background: rgba(17,26,21,.75); }
+.title-card-icon { width: 32px; height: 32px; flex: 0 0 32px; display: grid; place-items: center; border: 1px solid rgba(210,174,103,.28); border-radius: 9px; color: var(--gold-light); background: rgba(210,174,103,.06); }
+.title-card-icon svg { width: 19px; height: 19px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.title-card-copy { min-width: 0; flex: 1; }
+.title-card-copy h3 { margin: 0 0 3px; color: var(--text); font-size: .81rem; line-height: 1.4; }
+.title-card-copy p { margin: 0; color: var(--muted); font-size: .69rem; line-height: 1.65; }
+.title-guide-note { margin: 12px 2px 0; color: #849188; font-size: .66rem; line-height: 1.7; }
 .site-footer { padding: 15px 20px 20px; display: flex; align-items: center; gap: 11px; border-top: 1px solid var(--line); }
 .site-footer img { width: 42px; height: 42px; object-fit: contain; }
 .site-footer div { display: grid; line-height: 1.4; }
@@ -181,6 +204,7 @@ button, input { font: inherit; }
   .hero-description { font-size: .87rem; }
   .content-section { padding-inline: 15px; }
   .about-section { margin-inline: 15px; }
+  .title-guide { margin-inline: 15px; padding-inline: 12px; }
   .artwork-list { grid-auto-columns: 82%; }
   .artist-card > img { width: 76px; height: 76px; flex-basis: 76px; }
 }
