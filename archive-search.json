@@ -1,0 +1,55 @@
+{
+  "artists": [
+    {
+      "name": "صهيب محمد أحمد محمد",
+      "nickname": "أوبي",
+      "specialty": "أنمي ومانجا",
+      "preferredMaterial": "أقلام تلوين خشبية",
+      "rank": "B",
+      "titles": ["جوكر", "متعلم", "الناسخ", "سريع التطور", "مهندس الخلفيات"],
+      "image": "artists/sohaib/sohaib-profile.png",
+      "href": "artists/sohaib/index.html",
+      "summary": "فنان مهتم بعالم الأنمي والمانجا، ويستكشف أساليب متنوعة في الرسم والتلوين."
+    },
+    {
+      "name": "كعب الأحبار محمد موسى",
+      "nickname": "كاتشان",
+      "specialty": "أنمي ومانجا",
+      "preferredMaterial": "رسم وتلوين رقمي",
+      "rank": "B",
+      "titles": ["فري هاند", "مروّض الخامة", "رسام صاعد", "خبير"],
+      "image": "artists/kaab/kab-profile.png",
+      "href": "artists/kaab/index.html",
+      "summary": "فنان يهتم بالأنمي والمانجا ويطوّر أدواته الرقمية باستمرار."
+    },
+    {
+      "name": "مؤتمن أحمد سيد أحمد",
+      "nickname": "تمن",
+      "specialty": "بورتريه وحيوانات",
+      "preferredMaterial": "ألوان مائية",
+      "rank": "B",
+      "titles": ["مشرف"],
+      "image": "artists/mootamen/profile-placeholder.svg",
+      "href": "artists/mootamen/index.html",
+      "summary": "فنان هاوٍ يهتم بالبورتريه والحيوانات والتعبير بالألوان."
+    },
+    {
+      "name": "عبد القادر حبيب الله عبد القادر",
+      "nickname": "جدو",
+      "specialty": "أنمي",
+      "preferredMaterial": "حبر",
+      "rank": "C",
+      "titles": [],
+      "image": "artists/abdulqader/profile-placeholder.svg",
+      "href": "artists/abdulqader/index.html",
+      "summary": "فنان هاوٍ يركّز على رسم شخصيات الأنمي بالحبر."
+    }
+  ],
+  "artworks": [
+    {"title":"أوجيرو أوبناي","artist":"عبد القادر حبيب الله عبد القادر","type":"أنمي","material":"حبر","size":"A4","image":"artworks/abdulqader/artworks_gido_gido-art-03.jpg","href":"artists/abdulqader/index.html#artworks"},
+    {"title":"كيلوا زولديك","artist":"عبد القادر حبيب الله عبد القادر","type":"أنمي - مانجا","material":"حبر","size":"A4","image":"artworks/abdulqader/artworks_gido_gido-art-02.jpg","href":"artists/abdulqader/index.html#artworks"},
+    {"title":"فريناليزا","artist":"عبد القادر حبيب الله عبد القادر","type":"بورتريه","material":"حبر","size":"A4","image":"artworks/abdulqader/artworks_gido_gido-art-01.jpg","href":"artists/abdulqader/index.html#artworks"},
+    {"title":"لوحة طبيعية تعكس جمال المرأة وعفتها في الإسلام","artist":"مؤتمن أحمد سيد أحمد","type":"بورتريه","material":"ألوان مائية","size":"A3","image":"artworks/tmn/artworks_tmn_tmn-art-01.jpg","href":"artists/mootamen/index.html#artworks"},
+    {"title":"شينرا","artist":"صهيب محمد أحمد محمد","type":"أنمي","material":"ألوان ماركر","size":"A4","image":"artworks/sohaib/artworks_sohaib_sohaib-art-01.jpg","href":"artists/sohaib/index.html#artworks"}
+  ]
+}

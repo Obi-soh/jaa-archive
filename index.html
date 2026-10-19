@@ -59,6 +59,32 @@
         <div class="hero-side-label" aria-hidden="true">فنٌّ من الجزيرة إلى العالم</div>
       </section>
 
+      <section class="archive-search-section" id="archive-search-section" aria-labelledby="archive-search-title">
+        <div class="search-intro">
+          <span class="section-kicker">بوابة الأرشيف</span>
+          <h2 id="archive-search-title">ابحث عن فنان أو لوحة</h2>
+          <p>ابحث بالاسم، أو الخامة، أو المقاس، أو النوع، أو التصنيف العام، أو اللقب.</p>
+        </div>
+        <form class="archive-search-form" id="archive-search-form" role="search">
+          <label class="visually-hidden" for="archive-search-main">ابحث داخل أرشيف رسامين الجزيرة</label>
+          <span class="archive-search-icon" aria-hidden="true">⌕</span>
+          <input id="archive-search-main" type="search" autocomplete="off" placeholder="مثال: جوكر، حبر، A4، أنمي...">
+          <button type="button" id="archive-search-clear" aria-label="مسح البحث" hidden>×</button>
+        </form>
+        <p class="search-hint" id="archive-search-hint">اكتب كلمة واحدة أو أكثر، وستظهر النتائج فورًا.</p>
+        <div class="search-results" id="archive-search-results" aria-live="polite" aria-atomic="true"></div>
+      </section>
+
+      <section class="classification-note" aria-labelledby="classification-note-title">
+        <span class="classification-note-mark" aria-hidden="true">JAA</span>
+        <div>
+          <span class="section-kicker">كيف نقرأ الأرشيف؟</span>
+          <h2 id="classification-note-title">التصنيف العام والرتب والألقاب</h2>
+          <p>التصنيف العام يعبّر عن المستوى الإجمالي للفنان، أما الألقاب فتصف أدواره أو أسلوبه أو مهاراته الفنية. قد يحمل الفنان أكثر من لقب، وتُضاف البيانات تدريجيًا مع توسّع الأرشيف.</p>
+        </div>
+        <a class="classification-note-link" href="#title-guide">قراءة دليل الألقاب <span aria-hidden="true">←</span></a>
+      </section>
+
       <section class="content-section" id="artworks" aria-labelledby="artworks-title">
         <div class="section-heading">
           <div><span class="section-kicker">من الأرشيف</span><h2 id="artworks-title">أحدث الأعمال الفنية</h2></div>
@@ -266,6 +292,7 @@
         console.error("تعذر تحميل أحدث الأعمال:", error);
       }
     })();
-                                               </script>
+    </script>
+    <script src="archive-search.js" defer></script>
 </body>
 </html>
