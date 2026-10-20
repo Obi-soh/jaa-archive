@@ -205,6 +205,7 @@ button, input { font: inherit; }
 .artist-info small { color: var(--green); font-size: .61rem; }
 .artist-info strong { color: var(--text); font-size: .9rem; }
 .artist-info > span:not(.artist-cta) { color: var(--muted); font-size: .73rem; }
+.artist-info .artist-personal-nickname { margin-top: 4px; overflow: hidden; color: var(--gold-light); font-size: .66rem; text-overflow: ellipsis; white-space: nowrap; }
 .artist-info .artist-tags { display: flex; gap: 4px; margin-top: 5px; overflow: hidden; }
 .artist-tags b { padding: 2px 6px; overflow: hidden; border: 1px solid rgba(210,174,103,.23); border-radius: 4px; color: var(--gold-light); font-size: .58rem; font-weight: 500; text-overflow: ellipsis; white-space: nowrap; }
 .artist-info .artist-cta { margin-top: 6px; color: var(--gold-light); font-size: .71rem; }

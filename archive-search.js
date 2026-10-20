@@ -25,7 +25,7 @@
   const artistCard = (artist) => `<a class="search-result-card artist-result-card" href="${escapeHtml(artist.href)}">
     <img src="${escapeHtml(artist.image)}" alt="صورة الفنان ${escapeHtml(artist.name)}" loading="lazy">
     <span class="search-result-copy"><small>فنان</small><strong>${escapeHtml(artist.name)}</strong><em>${escapeHtml(artist.summary)}</em>
-      <span class="search-result-tags">${field("اللقب", artist.nickname)}${field("التخصص", artist.specialty)}${field("التصنيف", artist.rank)}${artist.titles.map((title) => field("لقب", title)).join("")}</span>
+      <span class="search-result-tags">${field("اللقب الشخصي", artist.nickname)}${field("التخصص", artist.specialty)}${field("التصنيف", artist.rank)}${artist.titles.map((title) => field("شارة", title)).join("")}</span>
     </span><span class="search-result-arrow" aria-hidden="true">←</span>
   </a>`;
 

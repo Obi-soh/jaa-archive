@@ -38,7 +38,7 @@
       return terms.every((term) => haystack.includes(term));
     }));
     count.textContent = `(${filtered.length} من ${artists.length})`;
-    status.textContent = query ? `نتائج البحث عن «${search.value.trim()}»` : "مرتبة أبجديًا؛ يمكنك البحث بالاسم أو اللقب أو التخصص.";
+    status.textContent = query ? `نتائج البحث عن «${search.value.trim()}»` : "مرتبة أبجديًا؛ يمكنك البحث بالاسم أو اللقب الشخصي أو التخصص.";
     empty.hidden = filtered.length > 0;
     grid.innerHTML = filtered.map(card).join("");
   };
