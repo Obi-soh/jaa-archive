@@ -161,6 +161,76 @@
       "type": "مانجا",
       "material": "حبر",
       "size": "A4"
+    },
+    {
+      "image": "artworks/marafe-ahmed/artworks_mrof_mrof-art-01.jpg",
+      "title": "حارس الخطوط",
+      "artist": "مرافئ أحمد البشير",
+      "href": "artists/marafe-ahmed/index.html#artworks",
+      "description": "بورتريه حيوان الحمار الوحشي بتباين قوي بين الضوء والظل، يبرز إيقاع الخطوط وتفاصيل النظرة.",
+      "type": "حيوانات",
+      "material": "أقلام رصاص",
+      "size": "غير محدد"
+    },
+    {
+      "image": "artworks/marafe-ahmed/artworks_mrof_mrof-art-02.jpg",
+      "title": "ابتسامة طفولة",
+      "artist": "مرافئ أحمد البشير",
+      "href": "artists/marafe-ahmed/index.html#artworks",
+      "description": "بورتريه لطفل بابتسامة هادئة، تلتقط اللوحة براءة اللحظة ودفء التعبير في ملامح الوجه.",
+      "type": "بورتريه",
+      "material": "أقلام رصاص",
+      "size": "غير محدد"
+    },
+    {
+      "image": "artworks/marafe-ahmed/artworks_mrof_mrof-art-03.jpg",
+      "title": "نظرة واثقة",
+      "artist": "مرافئ أحمد البشير",
+      "href": "artists/marafe-ahmed/index.html#artworks",
+      "description": "بورتريه لرجل يستند إلى يده، مع عناية واضحة بتفاصيل الوجه والملامح والظلال.",
+      "type": "بورتريه",
+      "material": "أقلام رصاص",
+      "size": "غير محدد"
+    },
+    {
+      "image": "artworks/marafe-ahmed/artworks_mrof_mrof-art-04.jpg",
+      "title": "بين البحر والوجه",
+      "artist": "مرافئ أحمد البشير",
+      "href": "artists/marafe-ahmed/index.html#artworks",
+      "description": "بورتريه ملون يزاوج بين ملامح الوجه وحركة الماء، وتظهر فيه أقلام التلوين جزءًا من التكوين.",
+      "type": "بورتريه",
+      "material": "أقلام تلوين خشبية",
+      "size": "غير محدد"
+    },
+    {
+      "image": "artworks/marafe-ahmed/artworks_mrof_mrof-art-05.jpg",
+      "title": "ملامح في الضوء",
+      "artist": "مرافئ أحمد البشير",
+      "href": "artists/marafe-ahmed/index.html#artworks",
+      "description": "بورتريه شبابي بالأبيض والأسود، يعتمد على التدرج الناعم لإظهار حجم الوجه وهدوء التعبير.",
+      "type": "بورتريه",
+      "material": "أقلام رصاص",
+      "size": "غير محدد"
+    },
+    {
+      "image": "artworks/marafe-ahmed/artworks_mrof_mrof-art-06.jpg",
+      "title": "ابتسامة تحت الأوراق",
+      "artist": "مرافئ أحمد البشير",
+      "href": "artists/marafe-ahmed/index.html#artworks",
+      "description": "بورتريه لرجل مبتسم تحيط به أوراق نباتية، في مشهد يجمع دفء الشخصية وحضور الطبيعة.",
+      "type": "بورتريه",
+      "material": "أقلام رصاص",
+      "size": "غير محدد"
+    },
+    {
+      "image": "artworks/marafe-ahmed/artworks_mrof_mrof-art-07.jpg",
+      "title": "هدوء الحضور",
+      "artist": "مرافئ أحمد البشير",
+      "href": "artists/marafe-ahmed/index.html#artworks",
+      "description": "بورتريه لرجل بملابس بيضاء، بخلفية داكنة تركز العين على الملامح وتمنح العمل حضورًا هادئًا.",
+      "type": "بورتريه",
+      "material": "أقلام رصاص",
+      "size": "غير محدد"
     }
   ]
 }
