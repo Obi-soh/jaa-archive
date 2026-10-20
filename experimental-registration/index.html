@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b100e">
+  <meta name="description" content="نموذج تجريبي لتسجيل فنان جديد في أرشيف رسامين الجزيرة.">
+  <title>تسجيل فنان · نموذج تجريبي | JAA</title>
+  <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+  <main class="registration-shell">
+    <header class="registration-header">
+      <a class="brand" href="../index.html"><img src="../Sudanese-Artist.png" alt="أرشيف رسامين الجزيرة"><span>JAA</span></a>
+      <span class="prototype-badge">نموذج تجريبي</span>
+    </header>
+
+    <section class="registration-hero">
+      <span class="eyebrow">JAA · NEW ARTIST</span>
+      <h1>ملف فنان جديد</h1>
+      <p>املأ بياناتك وأضف أعمالك. في النسخة النهائية ستصل المعلومات إلى مساحة مراجعة خاصة، ولن تُنشر إلا بعد موافقة الإدارة.</p>
+    </section>
+
+    <div class="notice" role="note"><strong>تنبيه تجريبي</strong><span>هذا النموذج مستقل حاليًا، ويحفظ البيانات داخل هذا المتصفح فقط. لا يتم إرسال أي شيء إلى GitHub أو نشره على الموقع.</span></div>
+
+    <form id="artist-registration-form" novalidate>
+      <section class="form-card" aria-labelledby="identity-title">
+        <div class="card-heading"><span class="step">01</span><div><span class="eyebrow">الهوية</span><h2 id="identity-title">بيانات الفنان</h2></div></div>
+        <div class="form-grid">
+          <label><span>الاسم بالعربية <b>*</b></span><input name="nameAr" required placeholder="مثال: محمد يوسف احمد"></label>
+          <label><span>الاسم بالإنجليزية</span><input name="nameEn" dir="ltr" placeholder="Example: Mohamed Yousif Ahmed"></label>
+          <label><span>اللقب الشخصي</span><input name="nickname" placeholder="مثال: نيمار - فيلسوف"></label>
+          <label><span>البريد الإلكتروني للتواصل</span><input name="email" type="email" placeholder="للتواصل عند الحاجة فقط"></label>
+          <label class="wide"><span>نبذة قصيرة</span><textarea name="bio" rows="4" placeholder="اكتب تعريفًا بسيطًا عن نفسك وتجربتك الفنية..."></textarea></label>
+          <label><span>صورة البروفايل</span><input name="profileImage" type="file" accept="image/*"><small class="field-help">اختياري في هذه المرحلة</small></label>
+        </div>
+      </section>
+
+      <section class="form-card" aria-labelledby="preferences-title">
+        <div class="card-heading"><span class="step">02</span><div><span class="eyebrow">الأسلوب</span><h2 id="preferences-title">التفضيلات والتصنيف</h2></div></div>
+        <div class="form-grid">
+          <label><span>نوع الرسم المفضل</span><input name="preferredType" placeholder="مثال: بورتريه، أنمي، جداريات"></label>
+          <label><span>نوع الخامة المفضلة</span><input name="preferredMaterial" placeholder="مثال: فحم، ماركر، حبر"></label>
+          <label><span>التصنيف العام المقترح</span><select name="rank"><option value="">اختر تصنيفًا</option><option>SSS</option><option>SS</option><option>S</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option></select></label>
+          <label><span>المدينة أو الولاية</span><input name="location" placeholder="اختياري"></label>
+        </div>
+        <p class="admin-note"><strong>الشارات</strong><span>لا يضيف الفنان الشارات بنفسه. تتركها الإدارة للمراجعة والتحديد لاحقًا.</span></p>
+      </section>
+
+      <section class="form-card" aria-labelledby="artworks-title">
+        <div class="card-heading"><span class="step">03</span><div><span class="eyebrow">الأعمال</span><h2 id="artworks-title">أضف رسوماتك</h2></div><button class="secondary-button" id="add-artwork" type="button">+ إضافة لوحة</button></div>
+        <div id="artworks-list" class="artworks-list"></div>
+        <p class="empty-artworks" id="empty-artworks">لم تُضف أي لوحة بعد. يمكنك الإرسال بالبيانات الشخصية فقط.</p>
+      </section>
+
+      <section class="review-card" aria-labelledby="review-title">
+        <div><span class="eyebrow">المراجعة</span><h2 id="review-title">قبل الإرسال</h2><p>سيتم حفظ الطلب كمعلّق للمراجعة. لا توجد شارات أو نشر تلقائي.</p></div>
+        <label class="consent"><input id="consent" type="checkbox" required><span>أقرّ بأن البيانات والأعمال المرفوعة تخصني أو أملك حق مشاركتها مع الأرشيف.</span></label>
+        <div class="form-actions"><button class="primary-button" type="submit">حفظ تجريبي للمراجعة</button><button class="ghost-button" id="clear-form" type="button">مسح النموذج</button></div>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+      </section>
+    </form>
+
+    <footer><a href="../index.html">العودة إلى الأرشيف</a><span>JAA · نموذج منفصل قيد التجربة</span></footer>
+  </main>
+  <template id="artwork-template"><article class="artwork-entry"><div class="artwork-entry-heading"><strong>لوحة جديدة</strong><button class="remove-artwork" type="button">إزالة</button></div><div class="form-grid"><label class="wide"><span>صورة اللوحة <b>*</b></span><input name="image" type="file" accept="image/*" required></label><label><span>عنوان اللوحة <b>*</b></span><input name="title" required placeholder="مثال: ليلة مرصعة بالنجوم"></label><label><span>النوع</span><input name="type" placeholder="مثال: فن تشكيلي، مانجا"></label><label><span>الخامة</span><input name="material" placeholder="مثال: ماركر، حبر"></label><label><span>المقاس</span><input name="size" placeholder="مثال: A3"></label><label><span>سنة الإنجاز</span><input name="year" inputmode="numeric" placeholder="2026"></label><label class="wide"><span>وصف قصير</span><textarea name="description" rows="3" placeholder="حدثنا عن العمل..."></textarea></label></div></article></template>
+  <script src="registration.js" defer></script>
+</body>
+</html>
