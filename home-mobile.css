@@ -195,15 +195,25 @@ button, input { font: inherit; }
 .artwork-meta p, .artwork-year { margin: 2px 0 0; color: var(--muted); font-size: .69rem; }
 .artwork-year { direction: ltr; }
 .artists-section { padding-top: 28px; }
+.artists-intro { margin: 5px 0 0; color: var(--muted); font-size: .68rem; line-height: 1.7; }
+.featured-artists-list { display: grid; grid-auto-columns: 84%; grid-auto-flow: column; gap: 11px; overflow-x: auto; padding: 0 0 9px; scroll-snap-type: x mandatory; scrollbar-width: none; }
+.featured-artists-list::-webkit-scrollbar { display: none; }
 .artist-card { position: relative; min-height: 112px; display: flex; align-items: center; gap: 13px; padding: 10px; border: 1px solid var(--line); border-radius: 13px; background: linear-gradient(115deg, rgba(21,38,27,.96), rgba(12,19,14,.96)); }
+.featured-artist-card { min-width: 0; scroll-snap-align: start; }
 .artist-card > img { width: 88px; height: 88px; flex: 0 0 88px; object-fit: cover; border-radius: 10px; border: 1px solid rgba(205,174,103,.35); }
 .artist-info { display: grid; gap: 2px; min-width: 0; }
+.artist-info small { color: var(--green); font-size: .61rem; }
 .artist-info strong { color: var(--text); font-size: .9rem; }
 .artist-info > span:not(.artist-cta) { color: var(--muted); font-size: .73rem; }
+.artist-info .artist-tags { display: flex; gap: 4px; margin-top: 5px; overflow: hidden; }
+.artist-tags b { padding: 2px 6px; overflow: hidden; border: 1px solid rgba(210,174,103,.23); border-radius: 4px; color: var(--gold-light); font-size: .58rem; font-weight: 500; text-overflow: ellipsis; white-space: nowrap; }
 .artist-info .artist-cta { margin-top: 6px; color: var(--gold-light); font-size: .71rem; }
 .artist-cta b { margin-inline-start: 5px; font-size: 1rem; }
 .artist-arrow { margin-inline-start: auto; color: var(--muted); font-size: 1.6rem; }
-.artist-note { color: var(--muted); font-size: .72rem; margin: 9px 2px 0; }
+.artists-directory-cta { display: grid; justify-items: center; gap: 7px; margin-top: 13px; text-align: center; }
+.artists-directory-cta a { padding: 9px 15px; border-radius: 9px; color: #10160f; background: var(--gold-light); font-size: .74rem; font-weight: 800; }
+.artists-directory-cta a span { margin-inline-start: 5px; }
+.artists-directory-cta small { color: var(--muted); font-size: .62rem; }
 .about-section { margin: 24px 20px 10px; padding: 19px; border: 1px solid rgba(202,174,111,.2); border-radius: 14px; background: linear-gradient(125deg, rgba(24,49,32,.7), rgba(13,20,15,.85)); }
 .about-section h2 { margin: 7px 0; font-size: 1.08rem; }
 .about-section p { margin: 0; color: var(--muted); font-size: .82rem; line-height: 1.85; }
