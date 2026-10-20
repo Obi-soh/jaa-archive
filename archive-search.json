@@ -84,7 +84,15 @@
       "specialty": "بورتريه",
       "preferredMaterial": "أقلام تلوين خشبية",
       "rank": "S",
-      "titles": [],
+      "titles": [
+        "مروض الخامة",
+        "جوكر",
+        "فري هاند",
+        "خبير",
+        "معلم",
+        "سيد الظلال",
+        "صياد الضوء"
+      ],
       "image": "artists/marafe-ahmed/marafe-profile.png",
       "href": "artists/marafe-ahmed/index.html",
       "summary": "أميل لرسم الحياة والطبيعة والصور الشخصية، وأهتم بتحويل الصور العادية إلى صورة عميقة بطريقة مختلفة مليئة بالإبداع. طالبة تسعى في سبيل العلم.",
@@ -169,8 +177,8 @@
       "href": "artists/marafe-ahmed/index.html#artworks",
       "description": "بورتريه حيوان الحمار الوحشي بتباين قوي بين الضوء والظل، يبرز إيقاع الخطوط وتفاصيل النظرة.",
       "type": "حيوانات",
-      "material": "أقلام رصاص",
-      "size": "غير محدد"
+      "material": "فحم",
+      "size": "A3"
     },
     {
       "image": "artworks/marafe-ahmed/artworks_mrof_mrof-art-02.jpg",
@@ -179,8 +187,8 @@
       "href": "artists/marafe-ahmed/index.html#artworks",
       "description": "بورتريه لطفل بابتسامة هادئة، تلتقط اللوحة براءة اللحظة ودفء التعبير في ملامح الوجه.",
       "type": "بورتريه",
-      "material": "أقلام رصاص",
-      "size": "غير محدد"
+      "material": "فحم",
+      "size": "A4"
     },
     {
       "image": "artworks/marafe-ahmed/artworks_mrof_mrof-art-03.jpg",
@@ -189,8 +197,8 @@
       "href": "artists/marafe-ahmed/index.html#artworks",
       "description": "بورتريه لرجل يستند إلى يده، مع عناية واضحة بتفاصيل الوجه والملامح والظلال.",
       "type": "بورتريه",
-      "material": "أقلام رصاص",
-      "size": "غير محدد"
+      "material": "فحم",
+      "size": "A4"
     },
     {
       "image": "artworks/marafe-ahmed/artworks_mrof_mrof-art-04.jpg",
@@ -199,8 +207,8 @@
       "href": "artists/marafe-ahmed/index.html#artworks",
       "description": "بورتريه ملون يزاوج بين ملامح الوجه وحركة الماء، وتظهر فيه أقلام التلوين جزءًا من التكوين.",
       "type": "بورتريه",
-      "material": "أقلام تلوين خشبية",
-      "size": "غير محدد"
+      "material": "فحم",
+      "size": "A4"
     },
     {
       "image": "artworks/marafe-ahmed/artworks_mrof_mrof-art-05.jpg",
@@ -209,8 +217,8 @@
       "href": "artists/marafe-ahmed/index.html#artworks",
       "description": "بورتريه شبابي بالأبيض والأسود، يعتمد على التدرج الناعم لإظهار حجم الوجه وهدوء التعبير.",
       "type": "بورتريه",
-      "material": "أقلام رصاص",
-      "size": "غير محدد"
+      "material": "فحم",
+      "size": "A4"
     },
     {
       "image": "artworks/marafe-ahmed/artworks_mrof_mrof-art-06.jpg",
@@ -219,8 +227,8 @@
       "href": "artists/marafe-ahmed/index.html#artworks",
       "description": "بورتريه لرجل مبتسم تحيط به أوراق نباتية، في مشهد يجمع دفء الشخصية وحضور الطبيعة.",
       "type": "بورتريه",
-      "material": "أقلام رصاص",
-      "size": "غير محدد"
+      "material": "فحم",
+      "size": "A4"
     },
     {
       "image": "artworks/marafe-ahmed/artworks_mrof_mrof-art-07.jpg",
@@ -229,8 +237,8 @@
       "href": "artists/marafe-ahmed/index.html#artworks",
       "description": "بورتريه لرجل بملابس بيضاء، بخلفية داكنة تركز العين على الملامح وتمنح العمل حضورًا هادئًا.",
       "type": "بورتريه",
-      "material": "أقلام رصاص",
-      "size": "غير محدد"
+      "material": "فحم",
+      "size": "A4"
     }
   ]
 }
