@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-labelledby="title desc">
+  <title id="title">رمز مؤقت لملف مرافئ أحمد البشير</title>
+  <desc id="desc">حرف الميم بالذهبي على خلفية خضراء داكنة، بانتظار الصورة الشخصية.</desc>
+  <defs>
+    <radialGradient id="bg" cx="72%" cy="24%" r="90%"><stop offset="0" stop-color="#1c3a27"/><stop offset="1" stop-color="#08100c"/></radialGradient>
+    <pattern id="brush" width="72" height="72" patternUnits="userSpaceOnUse" patternTransform="rotate(28)"><path d="M0 12H72M0 40H72" stroke="#d2ad66" stroke-opacity=".12" stroke-width="3"/></pattern>
+  </defs>
+  <circle cx="300" cy="300" r="300" fill="url(#bg)"/><circle cx="300" cy="300" r="282" fill="url(#brush)"/><circle cx="300" cy="300" r="220" fill="none" stroke="#d2ad66" stroke-opacity=".35" stroke-width="2"/>
+  <text x="300" y="390" text-anchor="middle" fill="#ead29d" font-family="Tahoma, Arial, sans-serif" font-size="250" font-weight="700">م</text>
+</svg>
