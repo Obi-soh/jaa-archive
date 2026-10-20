@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b100e">
+  <meta name="description" content="فهرس فناني أرشيف رسامين الجزيرة.">
+  <title>فنانو الجزيرة | JAA</title>
+  <link rel="stylesheet" href="../home-mobile.css?v=202610200746">
+  <link rel="stylesheet" href="artists-archive.css?v=202610200746">
+</head>
+<body>
+  <div class="page-shell artists-archive-shell">
+    <header class="topbar archive-topbar">
+      <a class="brand-mark" href="../index.html" aria-label="العودة إلى الصفحة الرئيسية">
+        <img src="../Sudanese-Artist.png" alt="شعار أرشيف رسامين الجزيرة">
+      </a>
+      <a class="archive-back-link" href="../index.html">الرئيسية <span aria-hidden="true">↩</span></a>
+    </header>
+
+    <main>
+      <section class="artists-archive-hero" aria-labelledby="artists-archive-title">
+        <span class="section-kicker">JAA · ARTIST DIRECTORY</span>
+        <h1 id="artists-archive-title">فنانو الجزيرة</h1>
+        <p>فهرس مرتب لملفات الفنانين؛ ابحث بالاسم أو اللقب أو التخصص أو التصنيف، ثم افتح الملف الكامل.</p>
+      </section>
+
+      <section class="artists-directory" aria-labelledby="directory-title">
+        <div class="directory-toolbar">
+          <div>
+            <span class="section-kicker">الأرشيف المفتوح</span>
+            <h2 id="directory-title">دليل الفنانين <span id="artist-count" aria-live="polite">—</span></h2>
+          </div>
+          <label class="directory-search">
+            <span class="visually-hidden">البحث في الفنانين</span>
+            <span aria-hidden="true">⌕</span>
+            <input id="artist-directory-search" type="search" autocomplete="off" placeholder="ابحث عن فنان أو لقب...">
+            <button id="artist-directory-clear" type="button" aria-label="مسح البحث" hidden>×</button>
+          </label>
+        </div>
+
+        <div class="directory-controls" aria-label="خيارات ترتيب الفنانين">
+          <button class="directory-filter is-active" type="button" data-sort="name">الاسم</button>
+          <button class="directory-filter" type="button" data-sort="rank">التصنيف</button>
+          <button class="directory-filter" type="button" data-sort="nickname">اللقب</button>
+        </div>
+
+        <p class="directory-status" id="directory-status" aria-live="polite">جارٍ تحميل ملفات الفنانين...</p>
+        <div class="artists-directory-grid" id="artists-directory-grid"></div>
+        <div class="directory-empty" id="directory-empty" hidden>
+          <strong>لم نعثر على فنان بهذه الكلمات</strong>
+          <span>جرّب الاسم أو اللقب أو التخصص أو حرف التصنيف.</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer archive-footer">
+      <img src="../Sudanese-Artist.png" alt="" aria-hidden="true">
+      <div><strong>أرشيف رسامين الجزيرة</strong><span>السودان · JAA</span></div>
+      <small>لكل فنان حكاية تستحق أن تُروى.</small>
+    </footer>
+
+    <nav class="bottom-nav" aria-label="التنقل السريع">
+      <a class="bottom-link" href="../index.html"><span class="nav-icon" aria-hidden="true">⌂</span><span>الرئيسية</span></a>
+      <a class="bottom-link is-active" href="index.html"><span class="nav-icon" aria-hidden="true">♙</span><span>الفنانون</span></a>
+      <a class="bottom-link" href="../index.html#artworks"><span class="nav-icon" aria-hidden="true">▧</span><span>الأعمال</span></a>
+      <a class="bottom-link" href="../index.html#title-guide"><span class="nav-icon" aria-hidden="true">•••</span><span>المزيد</span></a>
+    </nav>
+  </div>
+  <script src="artists-archive.js?v=202610200746" defer></script>
+</body>
+</html>

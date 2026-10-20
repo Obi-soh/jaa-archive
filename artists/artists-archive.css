@@ -1,0 +1,48 @@
+.artists-archive-shell { width: min(100%, 1180px); max-width: 1180px; min-height: 100vh; padding-bottom: 106px; overflow: hidden; }
+.archive-topbar { position: relative; height: 82px; padding-inline: clamp(20px, 4vw, 54px); border-bottom: 1px solid rgba(173,201,178,.09); background: linear-gradient(180deg, rgba(6,13,9,.92), rgba(6,13,9,.15)); }
+.archive-back-link { display: inline-flex; align-items: center; gap: 8px; color: var(--gold-light); font-size: .84rem; font-weight: 700; }
+.archive-back-link span { font-size: 1.05rem; }
+.artists-archive-hero { position: relative; padding: clamp(48px, 8vw, 88px) clamp(20px, 7vw, 82px) 40px; background: radial-gradient(circle at 78% 22%, rgba(103,197,142,.14), transparent 29%), linear-gradient(135deg, rgba(21,49,31,.8), rgba(8,14,10,.2)); }
+.artists-archive-hero::after { position: absolute; right: 7%; bottom: 20px; width: 160px; height: 1px; content: ""; background: linear-gradient(90deg, transparent, var(--gold)); opacity: .7; }
+.artists-archive-hero h1 { max-width: 760px; margin: 7px 0 12px; color: var(--text); font-size: clamp(2rem, 5vw, 4rem); line-height: 1.15; letter-spacing: -.04em; }
+.artists-archive-hero p { max-width: 660px; margin: 0; color: var(--muted); font-size: clamp(.88rem, 1.5vw, 1.05rem); line-height: 1.9; }
+.artists-directory { padding: 28px clamp(16px, 5vw, 62px) 42px; }
+.directory-toolbar { display: flex; align-items: end; justify-content: space-between; gap: 22px; padding-bottom: 18px; border-bottom: 1px solid var(--line); }
+.directory-toolbar h2 { margin: 3px 0 0; color: var(--text); font-size: clamp(1.2rem, 2.6vw, 1.65rem); }
+#artist-count { color: var(--gold-light); font-size: .72em; font-weight: 500; }
+.directory-search { position: relative; display: flex; align-items: center; width: min(100%, 360px); }
+.directory-search > span { position: absolute; right: 14px; z-index: 1; color: var(--gold-light); font-size: 1.35rem; pointer-events: none; }
+.directory-search input { min-height: 48px; padding: 9px 42px 9px 38px; border-color: rgba(210,174,103,.4); border-radius: 10px; direction: rtl; }
+.directory-search button { position: absolute; left: 9px; width: 27px; height: 27px; border: 0; border-radius: 50%; color: var(--muted); background: rgba(255,255,255,.08); cursor: pointer; }
+.directory-controls { display: flex; flex-wrap: wrap; gap: 7px; padding: 17px 0; }
+.directory-filter { padding: 7px 14px; border: 1px solid var(--line); border-radius: 999px; color: var(--muted); background: rgba(12,23,16,.7); cursor: pointer; font-size: .74rem; }
+.directory-filter:hover, .directory-filter.is-active { border-color: rgba(210,174,103,.55); color: var(--gold-light); background: rgba(210,174,103,.1); }
+.directory-status { margin: 0 0 14px; color: var(--muted); font-size: .76rem; }
+.artists-directory-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(255px, 1fr)); gap: 13px; }
+.directory-artist-card { position: relative; display: grid; grid-template-columns: 74px 1fr; align-items: center; gap: 13px; min-height: 106px; padding: 12px; overflow: hidden; border: 1px solid var(--line); border-radius: 13px; background: linear-gradient(135deg, rgba(22,42,28,.94), rgba(10,18,13,.98)); transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
+.directory-artist-card::before { position: absolute; top: -38px; left: -30px; width: 94px; height: 94px; content: ""; border: 1px solid rgba(103,197,142,.14); transform: rotate(45deg); }
+.directory-artist-card:hover { transform: translateY(-3px); border-color: rgba(103,197,142,.55); box-shadow: 0 14px 30px rgba(0,0,0,.22); }
+.directory-artist-card img { position: relative; width: 74px; height: 74px; object-fit: cover; border: 1px solid rgba(210,174,103,.35); border-radius: 10px; background: #132018; }
+.directory-artist-copy { position: relative; min-width: 0; display: grid; gap: 2px; }
+.directory-artist-copy small { color: var(--green); font-size: .62rem; }
+.directory-artist-copy strong { overflow: hidden; color: var(--text); font-size: .9rem; text-overflow: ellipsis; white-space: nowrap; }
+.directory-artist-copy em { overflow: hidden; color: var(--muted); font-size: .7rem; font-style: normal; text-overflow: ellipsis; white-space: nowrap; }
+.directory-artist-meta { display: flex; align-items: center; gap: 5px; margin-top: 5px; overflow: hidden; }
+.directory-artist-meta span { padding: 2px 6px; overflow: hidden; border: 1px solid rgba(210,174,103,.2); border-radius: 4px; color: var(--gold-light); font-size: .59rem; text-overflow: ellipsis; white-space: nowrap; }
+.directory-arrow { margin-inline-start: auto; color: var(--gold-light); font-size: 1.05rem; }
+.directory-empty { padding: 42px 20px; border: 1px dashed rgba(210,174,103,.35); border-radius: 13px; color: var(--muted); text-align: center; }
+.directory-empty strong, .directory-empty span { display: block; }
+.directory-empty strong { margin-bottom: 5px; color: var(--text); }
+.directory-empty span { font-size: .78rem; }
+.archive-footer { margin-inline: clamp(16px, 5vw, 62px); }
+@media (max-width: 640px) {
+  .archive-topbar { height: 72px; }
+  .artists-archive-hero { padding-top: 45px; padding-bottom: 28px; }
+  .directory-toolbar { display: grid; gap: 16px; }
+  .directory-search { width: 100%; }
+  .artists-directory-grid { grid-template-columns: 1fr; gap: 10px; }
+  .directory-artist-card { min-height: 96px; }
+}
+@media (min-width: 900px) {
+  .artists-directory-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
